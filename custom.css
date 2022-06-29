@@ -1,0 +1,351 @@
+body {
+  font-family: 'Roboto', Garamond, 'Times New Roman', serif;
+  font-size: 0.9em;
+  line-height: 2;
+  padding: 3em 1em 10em 1em;
+  text-align: left;
+  color: #2c3531;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 40em;
+  isolation: isolate;
+}
+
+nav section::content{
+  display: inline-block;
+  margin: 0 1em;
+}
+
+.container section {
+  margin-bottom: 2em;
+}
+
+.tagline {
+  font-size: 1.3em;
+  font-weight: 800;
+  margin: 0.5em 0 0.3em 0;
+}
+
+
+hr {
+  border-color: #eee;
+  border-style: solid;
+  border-width: 0px;
+  margin: 1.25em;
+}
+a {
+  border-radius: 4px;
+  margin: 0 -.25em;
+  padding: 0 .25em;
+}
+a, a:visited {
+  -webkit-transition: all 300ms linear;
+  color: #2E4951;
+}
+a:hover {
+  background-color: #2E4951;
+  color: white;
+}
+img {
+  width: 100%;
+}
+
+h1, h2 {
+  color: #116466;
+  font-family: 'Rubik', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  text-align: center;
+  /* text-transform: uppercase; */
+}
+
+h1 {
+  font-size: 2em;
+}
+
+.bnr h1 {
+  text-align: left;
+}
+
+p img {
+  margin: 1em 0;
+}
+
+h1 a {
+  border-radius: 5em;
+  display: inline-block;
+  text-decoration: none;
+  text-indent: -9999px;
+  background-image: url(//www.jonathanstark.com/img/touch/icon_144.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+h1 a:hover {
+  background-color: #eee;
+}
+h2 {
+  font-size: 1.7em;
+  border-color: lightgray;
+  border-style: dotted;
+  border-width: 1px 0 0 0;
+  padding: 1em 0 0 0;
+}
+ul {
+  padding-left: 1em;
+  text-align: left;
+}
+ol {
+  padding-left: 2em;
+  text-align: left;
+}
+blockquote {
+  font-family: 'Roboto Mono', Garamond, 'Times New Roman', serif;
+background-color: #d1e8e2;
+border-radius: 10px;
+border: none;
+margin: 1em 0 0 50px;
+padding: 0.6em 1.9em 0.6em 4em;
+position: relative;
+}
+blockquote img {
+border-radius: 50px;
+left: -50px;
+max-width: 100px;
+position: absolute;
+bottom: 20px
+}
+@media screen and (max-width:736px) {
+blockquote {
+  margin: 80px 0 1em 0;
+  padding: 50px 1em 1em 1em;
+}
+blockquote img {
+  position: absolute;
+  left: 30px;
+  bottom: -50px;
+}
+}
+
+code {
+  background-color: #efefef;
+  border: 1px solid #ddd;
+  color: orangered;
+  font-size: 125%;
+  padding: 0 3px;
+}
+sup {
+  color: red;
+  font-weight: bold;
+}
+sup.cents {
+  color: white;
+}
+img.avatar {
+  border-radius: 50px;
+  display: block;
+  width: 100px;
+}
+form.drip.center input {
+  display: inline-block;
+}
+.cta {
+  background-color: hsl(162, 58%, 30%);
+  border-bottom: 3px solid hsl(162, 58%, 15%);
+  border-radius: 2em;
+  color: white !important;
+  display: block;
+  font-family: 'Oswald', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  padding: 0.5em 0 0.4em 0;
+  font-size: 1.2em;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.cta:hover {
+  background-color: hsl(162, 58%, 35%);
+  border-bottom: 3px solid hsl(162, 58%, 20%);
+}
+.cta:active {
+  background-color: hsl(162, 58%, 20%);
+  border-bottom: 3px solid hsl(162, 58%, 20%);
+}
+.cta.inline {
+  display: inline-block;
+  padding: 0.5em 2em 0.4em 2em;
+  white-space: nowrap;
+}
+.cta.inline.margin {
+  margin: .25em .25em .25em .25em;
+}
+tr > td > a.cta.inline {
+  padding: 0;
+}
+.banner {
+  background-color: black;
+  box-shadow: 0px 2px 2px rgba(0,0,0,0.25);
+  font-size: 0.8em;
+  left: 0;
+  margin: 0;
+  padding: .5em 2em;
+  position: absolute;
+  right: 0;
+  text-align: center;
+  top: 0;
+  z-index: 1;
+}
+.banner, .banner a {
+  color: white;
+}
+.banner .cta.inline {
+  margin: 8px 5px;
+  padding: 0 14px;
+}
+.webcast-promo {
+  background-color: #2E4951;
+  color: white;
+  padding: 1em;
+  text-align: center;
+}
+.webcast-promo a {
+  display: block;
+  color: white;
+}
+.webcast-promo .small {
+  font-size: x-small;
+  font-weight: normal;
+}
+footer {
+  border-top: 2px solid #eee;
+  color: #666;
+  margin-top: 3em;
+  padding: 2em;
+  text-align: center;
+}
+footer p {
+  margin: 0;
+  padding: 0;
+}
+/* DRIP STUFF */
+form label {
+  font-size: small;
+}
+form input[type=email],
+form input[type=password],
+form input[type=text] {
+  -webkit-appearance: none;
+  border: 3px solid #789;
+  border-radius: 4px;
+  box-sizing: border-box;
+  display: block;
+  font-weight: bold;
+  font-size: 1.1em;
+  padding: .5em;
+  width: 100%;
+}
+form input[type=submit] {
+  -webkit-appearance: none;
+  background-color: #2E4951;
+  border: none;
+  border-radius: 4px;
+  box-sizing: border-box;
+  color: #fff;
+  display: block;
+  font-weight: bold;
+  font-size: 1.1em;
+  margin: .5em 0;
+  padding: 1em 2em;
+  width: 100%;
+}
+.menu ul {
+  display: block;
+  font-size: smaller;
+  list-style: none;
+  padding: 0;
+  text-align: center;
+}
+.menu ul li {
+  margin: 0 .25em;
+}
+.menu ul li a {
+  display: block;
+  padding: .5em .5em;
+}
+.center {
+  display: block;
+  text-align: center;
+}
+@media screen and (min-width: 400px) {
+  .menu ul li {
+      display:inline-block;
+  }
+}
+@media screen and (min-width: 600px) {
+  body {
+      font-size: 1.1em;
+      padding-top: 4em;
+  }
+  .cta {
+      margin: 0 10em;
+  }
+  .cta.inline {
+      margin: 0;
+  }
+}
+/*startdates on dailies*/
+.daily .stardate,
+.daily .sharing {
+  margin: 0;
+  padding: 0;
+  font-size: x-small;
+}
+/*tweaks to daily headlines*/
+.daily h1,
+.daily h2 {
+  margin-top: .1em;
+  text-align: left;
+}
+/*show horizontal rules on dailies*/
+.daily hr {
+  border-width: 1px;
+  margin-left: 0;
+  margin-right: 0;
+}
+/*undo some padding for blockquotes that dont have images*/
+.daily blockquote {
+  margin: 0;
+  padding: 1em;
+}
+/*make sure email optin in foot only shows on dailies*/
+footer form {
+  display: none !important;
+}
+.daily footer form {
+  display: block !important;
+  margin-bottom: 3em;
+}
+.daily footer form input {
+  font-weight: normal;
+}
+.daily footer form input[type=submit] {
+  padding: .66em;
+}
+@media screen and (min-width: 600px) {
+  form input[type=email],
+  form input[type=password],
+  form input[type=submit] {
+      display: inline-block;
+      width: 22em;
+  }
+}
+@media screen and (min-width: 600px) {
+  .top-right {
+      display: fixed;
+      font-size: small;
+      padding: 1em;
+      position: fixed;
+      right: 0.5em;
+      top: 0.5em;
+  }
+}
